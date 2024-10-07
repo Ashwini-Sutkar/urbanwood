@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Wood </title>
+    <link rel="stylesheet" href="index.css">
+    
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+</head>
+<body>
+
+ <!-- <div class="top-bar">
+        No Cost EMI Offers - Available With HDFC Bank
+    </div> -->
+
+    <div class="text-slider">
+        <span class="slider-content" id="slider-text"></span>
+    </div>
+
+    <!-- <div class="contact-bar">
+        <div class="contact-info">
+            <span class="flash-icon">
+                <i class="bx bx-mail-send bx-flashing"></i>
+                <a href="mailto:support@urbanwood.in">Support@urbanwood.in</a>
+                </span>
+            
+
+            <span class="flash-icon">
+                <i class="bx bx-phone-call bx-flashing"></i>
+            </span>
+            <a href="mailto:support@urbanwood.in">Sales+ 91 9599283126</a>
+
+            <span class="flash-icon">
+                <i class="bx bx-phone-call bx-flashing"></i>
+            </span>
+            <a href="mailto:support@urbanwood.in">Service (10am-8pm)+ 91 8955228351</a>
+   
+        </div>
+
+        <div class="button-group">
+            <a href="#">Bulk Order</a>
+            <a href="#">Track Order</a>
+        </div>
+    </div> -->
+    <div class="contact-bar">
+        <div class="contact-info">
+            <span class="flash-icon">
+                <i class="bx bx-mail-send bx-flashing"></i>
+                <a href="mailto:support@urbanwood.in"  style="text-decoration: none;">Support@urbanwood.in</a>
+                </span>
+            
+
+            <span class="flash-icon">
+                <i class="bx bx-phone-call bx-flashing"></i>
+            </span>
+            <a href="mailto:support@urbanwood.in" style="text-decoration: none;">Sales+ 91 9599283126</a>
+
+            <span class="flash-icon">
+                <i class="bx bx-phone-call bx-flashing"></i>
+            </span>
+            <a href="mailto:support@urbanwood.in" style="text-decoration: none;">Service (10am-8pm)+ 91 8955228351</a>
+   
+        </div>
+
+        <div class="button-grp">
+            <Span class="bulk"><a href=""  style="text-decoration: none;">Bulk Order</a> </Span>
+
+           <span class="track">
+            
+            <a  href="" style="text-decoration: none;">
+                <span class="root-t">
+                    <i class="bx bxs-truck bx-fade-right text-white"></i>
+                </span>
+                Track Order</a></span>
+
+            
+        </div>
+    </div>
+   
+   
+   
+    <div class="header">
+        <div class="logo">
+            <img src="assets/urbanwoodlogo.png" alt="">
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products">
+            <button class="search-btn" type="submit" aria-label="search">
+                <i class="bx bx-search"></i>
+                </button>
+
+        </div>
+
+        <div class="icons">
+            <div class="dropdown-pp">
+                <button class="dropbtn-profile" aria-label="profile">
+                    <i class="bx bx-user"></i>
+                </button>
+                <div class="dropdown-content-pp">
+                    <a href="javascript:;" onclick="signinmodal()" style="text-decoration: none;">Log In <span class="d-block" style="font-size:12px; text-decoration: none; "><small>(If already have account)</small></span></a>
+                    <div class="sign-up-btn">
+                        <a href="javascript:;" onclick="signupmodal()" style="color: white; text-decoration: none;">Sign Up <span class="d-block" style="font-size:12px; color: white;"><small>(If you are not registered)</small></span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="login" aria-label="wishlist">
+                <i class="bx bx-heart"></i>
+            </a>
+
+            <a href="?route=checkout/cart" aria-label="cart">
+                <i class="bx bx-cart-alt"></i>
+                <span class="badge_pp">0</span>
+        
+            </a>
+        </div>
+    </div>
+
+    <div class="nav-bar">
+        <a href="#" class="active">TODAY'S SALE</a>
+        <a href="#" class="blink">NEW ARRIVALS</a>
+        <a href="#">SOFAS</a>
+        <a href="#">LIVING</a>
+        <a href="#">BEDROOM</a>
+        <a href="#">DININGROOM</a>
+        <a href="#">STORAGE FURNITURE</a>
+        <a href="#">STUDY/OFFICE</a>
+        <a href="#">DECOR</a>
+        <a href="#">CUSTOM FURNITURE</a>
+        <a href="#">OUR STORES</a>
+    </div>
+
+    <div class="nav-home">
+        <a class="home"> <i class="fa fa-home"></i> &nbsp;
+            > Adkins Low Floor Bed (Queen Size, Honey Finish )
+        </a>
+
+    </div>
+
+    <!-- product section -->
+
+    <div class="product-section">
+        <!-- Left Image Carousel -->
+        <div class="image-carousel">
+            <div class="carousel-container">
+                <i class="fas fa-chevron-left prev-btn"></i>
+                <img src="assets/2-888x620-bed-1.jpg" alt="Product Image" id="main-image">
+                <i class="fas fa-chevron-right next-btn"></i>
+            </div>
+            <div class="carousel-thumbnails">
+                <img src="assets/1-888x620-bed-2.jpg" alt="Thumbnail 1" class="thumbnail active">
+                <img src="assets/queen-dim-888x620-sofa-3.jpg" alt="Thumbnail 2" class="thumbnail">
+                <img src="assets/2-888x620-bed-1.jpg" alt="Thumbnail 3" class="thumbnail">
+                <img src="assets/1-888x620-bed-2.jpg" alt="Thumbnail 4" class="thumbnail">
+            </div>
+
+            <div>
+                <img  style="padding: 25px 0px ;" src="assets/big-strip-mobile.jpg"  alt=""  >
+            </div>
+        </div>
+
+         <!-- Right Side Information -->
+         <div class="product-info">
+            <div class="solid-amount">
+                <div class="right-aligned">
+                    <span class="blink-image"><i class="fa-solid fa-fire"></i></span>
+                    <span id="foo">7  sold in last</span>
+                    <span id="hrs">4  hours</span>
+                </div>
+            </div>
+
+            <h1 class="product-title">Adkins Low Floor Bed </h1>
+             <p style="text-align: left;">(Queen Size, Honey Finish) <span style="color: #fc7e00;">By Urbanwood</span></p>
+            <p class="price"><span class="paisa">₹40,199</span> <del>₹61,099</del> <span class="discount">34% OFF</span> <span style="color: #9b9b9b; font-size: 12px;">incl all taxes*</span></p>     
+            
+            <div class="product-features">
+                <span><i class="fas fa-shield-alt"></i> 36 Months' Warranty</span>
+                <span><i class="fa fa-cog" aria-hidden="true"></i>Free Installation</span>
+                <span><i class="fas fa-shipping-fast"></i> Free Delivery</span>
+            </div>
+
+            <p class="pincode"> <span style="font-size: 18px;  color: #000;">Delivery:</span>( Check Delivery availabilty by are your area )</p>
+            <div class="delivery-check">
+                <input type="text" id="pincode" placeholder="Enter Pincode">
+                <button class="check-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+
+            <div class="quantity-section">
+                <label for="quantity">Quantity</label>
+                <select id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+
+            <div class="cta-buttons">
+                <div> 
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                <div> 
+                    <button class="buy-now">BUY NOW</button>
+                </div>
+            </div>
+            <div class="dotted-line"></div>
+            
+
+            <div class="offers">
+                <h3>Available offers:</h3>
+                <p style="text-align: left; font-size: 14px;"><i style="color: #0590fb;"  class="fas fa-tag"></i> &nbsp;No Cost EMI - Starting from ₹3350 on HDFC credit card & More</p>
+            </div>
+
+            <div class="finish-options">
+                <h3>Finish Option</h3>
+                <div class="price-boxes">
+                    <div class="box">
+                        <img src="assets/1-201x139-honey.jpg" alt="Honey" class="box-img">
+                        <div class="box-text">
+                            <p>Honey</p>
+                            <p>₹ 40,199</p>
+                        </div>
+                    </div>
+                    
+                    <div class="box">
+                        <img src="assets/1-201x139-walnut.jpg" alt="Walnut" class="box-img">
+                        <div class="box-text">
+                            <p>Walnut</p>
+                            <p>₹ 40,199</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- SIZE -->
+            <div class="finish-options">
+                <h3>SIZE</h3>
+                <div class="price-boxes">
+                    <div class="box" style="width:145px;">
+                        <!-- <img src="assets/1-201x139-honey.jpg" alt="Honey" class="box-img"> -->
+                        <div class="box-text">
+                            <p>King</p>
+                            <p>₹ 45,199</p>
+                        </div>
+                    </div>
+                
+                </div>
+                
+            </div>
+           
+            <!-- DECO -->
+            <div class="finish-options">
+                <h3>Deco</h3>
+                <div class="price-boxes">
+                    <div class="box">
+                        <img src="assets/1-201x139-dark blue.jpg" alt="Honey" class="box-img">
+                        <div class="box-text">
+                            <p>Cosmic Blue</p>
+                            <p>₹ 37,199</p>
+                        </div>
+                    </div>
+                    
+                    <div class="box">
+                        <img src="assets/1-201x139-honey.jpg" alt="Walnut" class="box-img">
+                        <div class="box-text">
+                            <p>Dark Green</p>
+                            <p>₹ 37,199</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="assets/1-201x139-walnut.jpg" alt="Walnut" class="box-img">
+                        <div class="box-text">
+                            <p>Dark Grey</p>
+                            <p>₹ 37,199</p>
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+                
+            </div>
+
+            <div class="finish-options">
+                <!-- <h3>Deco</h3> -->
+                <div class="price-boxes">
+                    <div class="box">
+                        <img src="assets/1-201x139-honey.jpg" alt="Honey" class="box-img">
+                        <div class="box-text">
+                            <p>French Blue</p>
+                            <p>₹ 37,199</p>
+                        </div>
+                    </div>
+                    
+                    <div class="box">
+                        <img src="assets/1-201x139-walnut.jpg" alt="Walnut" class="box-img">
+                        <div class="box-text">
+                            <p>Dark Green</p>
+                            <p>₹ 37,199</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="assets/1-201x139-satin-blue.jpg" alt="Walnut" class="box-img">
+                        <div class="box-text">
+                            <p>Satin Blue</p>
+                            <p>₹ 37,199</p>
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+                
+            </div>
+
+            <div class="finish-options">
+               
+                <div class="price-boxes">
+                    <div class="box">
+                        <img src="assets/1-201x139-honey.jpg" alt="Honey" class="box-img">
+                        <div class="box-text">
+                            <p>Smoke grey</p>
+                            <p>₹ 37,199</p>
+                        </div>
+                    </div>
+                      
+                </div>
+                
+            </div>
+
+            <div class="product-det" >Product details 
+                <button class="toggle-btn" style="padding: 0px 6px; border: none;">+</button>
+            </div>
+            <div class="product-details-section">
+                <div class="product-details">
+                    <table class="details-table">
+                        <tr>
+                            <td>Brand :</td>
+                            <td>Urbanwood</td>
+                        </tr>
+                        <tr>
+                            <td>Dimensions :</td>
+                            <td>84 L x 62 W x 36 H</td>
+                        </tr>
+                        <tr>
+                            <td>Sku :</td>
+                            <td>ADK-BED-QUE-HON-LOW</td>
+                        </tr>
+                        <tr>
+                            <td>Finish :</td>
+                            <td>Honey Finish</td>
+                        </tr>
+                        <tr>
+                            <td>Material :</td>
+                            <td>Sheesham Wood</td>
+                        </tr>
+                        <tr>
+                            <td>Warranty :</td>
+                            <td>36 Months</td>
+                        </tr>
+                        <tr>
+                            <td>Caring Instructions :</td>
+                            <td>Professional Cleaning only</td>
+                        </tr>
+                        <tr>
+                            <td>Country Of Origin :</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td>Delivery Condition :</td>
+                            <td>Knocked-down</td>
+                        </tr>
+                        <tr>
+                            <td>Dispatch in :</td>
+                            <td>5 Weeks</td>
+                        </tr>
+                        <tr>
+                            <td>Customization :</td>
+                            <td>Customized can be as per requirement.</td>
+                        </tr>
+                        <tr>
+
+                        </tr>
+                    </table>
+                    <p class="note">*NOTE : Furniture having intricate hand-painted details are individual unique pieces (ceramic tile) and may have slight distinctions and variances between the picture and the actual product.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+     <!-- frequently bought product  -->
+     <div class="frequently-bought-products">
+        <h2>FREQUENTLY BOUGHT PRODUCTS</h2>
+        <div class="product-cards">
+            <div class="product-card">
+                <img src="assets/crop-700x480-morgana-beside.jpg" alt="Morgana Bedside Table">
+                <div class="product-in">
+                    <h3>Morgana Bedside Table...</h3>
+                    <p>By Urbanwood</p>
+                    <div class="price">
+                        <span class="current-price">₹5,750</span>
+                        <span class="original-price">₹12,800</span>
+                        <span class="discount">55% OFF</span>
+                    </div>
+                    <div class="btn-buy"><button class="buy-now-btn">Buy Now</button></div>
+                   
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="assets/honey-700x480-trace.jpg" alt="Trace Dressing Table">
+                <div class="product-in">
+                    <h3>Trace Dressing Table...</h3>
+                    <p>By Urbanwood</p>
+                    <div class="price">
+                        <span class="current-price">₹34,250</span>
+                        <span class="original-price">₹55,737</span>
+                        <span class="discount">39% OFF</span>
+                    </div>
+                    <div class="btn-buy"><button class="buy-now-btn">Buy Now</button></div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="assets/1-700x480-kira.jpg" alt="Kira Storage Cabinet">
+                <div class="product-in">
+                    <h3>Kira Storage Cabinet...</h3>
+                    <p>By Urbanwood</p>
+                    <div class="price">
+                        <span class="current-price">₹26,700</span>
+                        <span class="original-price">₹38,990</span>
+                        <span class="discount">32% OFF</span>
+                    </div>
+                    <div class="btn-buy"><button class="buy-now-btn">Buy Now</button></div>                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/1-700x480-kira.jpg" alt="Kira Storage Cabinet">
+                <div class="product-in">
+                    <h3>Kira Storage Cabinet...</h3>
+                    <p>By Urbanwood</p>
+                    <div class="price">
+                        <span class="current-price">₹26,700</span>
+                        <span class="original-price">₹38,990</span>
+                        <span class="discount">32% OFF</span>
+                    </div>
+                    <div class="btn-buy"><button class="buy-now-btn">Buy Now</button></div>                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/1-700x480-kira.jpg" alt="Kira Storage Cabinet">
+                <div class="product-in">
+                    <h3>Kira Storage Cabinet...</h3>
+                    <p>By Urbanwood</p>
+                    <div class="price">
+                        <span class="current-price">₹26,700</span>
+                        <span class="original-price">₹38,990</span>
+                        <span class="discount">32% OFF</span>
+                    </div>
+                    <div class="btn-buy"><button class="buy-now-btn">Buy Now</button></div>                </div>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </div>
+
+
+    <!-- RELATED PRODUCTS -->
+    <div class="frequently-bought-products">
+        <h2>RELATED PRODUCTS</h2>
+        <div class="product-cards">
+            <div class="product-card">
+                <img src="assets/crop-700x480-morgana-beside.jpg" alt="Morgana Bedside Table">
+                <div class="product-in">
+                    <h3>Morgana Bedside Table...</h3>
+                    <p>By Urbanwood</p>
+                    <div class="price">
+                        <span class="current-price">₹5,750</span>
+                        <span class="original-price">₹12,800</span>
+                        <span class="discount">55% OFF</span>
+                    </div>
+                    <div class="btn-buy"><button class="buy-now-btn">Buy Now</button></div>                </div>
+            </div>
+            <div class="product-card">
+                <img src="assets/honey-700x480-trace.jpg" alt="Trace Dressing Table">
+                <div class="product-in">
+                    <h3>Trace Dressing Table...</h3>
+                    <p>By Urbanwood</p>
+                    <div class="price">
+                        <span class="current-price">₹34,250</span>
+                        <span class="original-price">₹55,737</span>
+                        <span class="discount">39% OFF</span>
+                    </div>
+                    <div class="btn-buy"><button class="buy-now-btn">Buy Now</button></div>                </div>
+            </div>
+            <div class="product-card">
+                <img src="assets/1-700x480-kira.jpg" alt="Kira Storage Cabinet">
+                <div class="product-in">
+                    <h3>Kira Storage Cabinet...</h3>
+                    <p>By Urbanwood</p>
+                    <div class="price">
+                        <span class="current-price">₹26,700</span>
+                        <span class="original-price">₹38,990</span>
+                        <span class="discount">32% OFF</span>
+                    </div>
+                    <div class="btn-buy"><button class="buy-now-btn">Buy Now</button></div>                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/1-700x480-kira.jpg" alt="Kira Storage Cabinet">
+                <div class="product-in">
+                    <h3>Kira Storage Cabinet...</h3>
+                    <p>By Urbanwood</p>
+                    <div class="price">
+                        <span class="current-price">₹26,700</span>
+                        <span class="original-price">₹38,990</span>
+                        <span class="discount">32% OFF</span>
+                    </div>
+                    <div class="btn-buy"><button class="buy-now-btn">Buy Now</button></div>                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/1-700x480-kira.jpg" alt="Kira Storage Cabinet">
+                <div class="product-in">
+                    <h3>Kira Storage Cabinet...</h3>
+                    <p>By Urbanwood</p>
+                    <div class="price">
+                        <span class="current-price">₹26,700</span>
+                        <span class="original-price">₹38,990</span>
+                        <span class="discount">32% OFF</span>
+                    </div>
+                    <div class="btn-buy"><button class="buy-now-btn">Buy Now</button></div>                </div>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </div>
+
+    <!-- more product information  -->
+    <div class="product-info-section">
+        <h2>MORE PRODUCT INFORMATION</h2>
+        <div class="info-tabs">
+            <div class="tab active">OVERVIEW</div>
+            <div class="tab">CARE & INSTRUCTIONS</div>
+            <div class="tab">DELIVERY & INSTALLATION</div>
+            <div class="tab">WARRANTY</div>
+            <div class="tab">T&C</div>
+            <div class="tab">MERCHANT DETAILS</div>
+            <div class="tab">FAQ'S</div>
+            <div class="tab">DISCLAIMER</div>
+        </div>
+    </div>
+
+
+    <!-- review section -->
+    <div class="review-section">
+        Give Your Valuable Review
+    </div>
+    
+    <!-- find store  -->
+    <div class="banner">
+        <div class="left-content">
+            <h2>VISIT OUR NEAREST STORE <br>& <br>GET EXTRA <span class="highlight">DISCOUNT</span></h2>
+            <button class="store-btn">Find Store</button>
+        </div>
+        <div class="right-content">
+            <!-- Add your image here, if needed use the <img> tag -->
+            <img src="assets/location-strip.png" alt="Store Locations">
+        </div>
+    </div>
+    
+
+    <!-- customers review -->
+   
+
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="footer-container">
+            <!-- Contact Info -->
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <p><i class="bx bxs-map" style=" color: #d46b0b"></i> &nbsp; URBANWOOD FURNITURE PRIVATE LIMITED Ajmer road, Jaipur, Rajasthan, 302026</p>
+              
+                <p><i class="bx bxs-phone" style=" color: #d46b0b"></i>&nbsp; +91 9599283126</p>
+                <p><i class="bx bx-envelope" style=" color: #d46b0b"></i> &nbsp;support@urbanwood.in</p>
+                <div class="social-icons">
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>
+                    <a href="#"><i class="bx bxl-youtube"></i></a>
+                    <a href="#"><i class="bx bxl-pinterest-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Useful Links -->
+            <div class="footer-column">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Bulk Order</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Service -->
+            <div class="footer-column">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Return & Refunds</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Security & Privacy</a></li>
+                    <li><a href="#">Delivery & Shipping Policy</a></li>
+                    <li><a href="#">Customer Stories</a></li>
+                </ul>
+            </div>
+
+            <!-- Top Categories -->
+            <div class="footer-column">
+                <h4>Top Categories</h4>
+                <ul>
+                    <li><a href="#">Bedroom</a></li>
+                    <li><a href="#">Sofas</a></li>
+                    <li><a href="#">Dining Room</a></li>
+                    <li><a href="#">Wardrobes</a></li>
+                    <li><a href="#">Bookshelves</a></li>
+                </ul>
+                <div class="subscribe">
+                    <span>
+                        <input type="email" placeholder="Enter your email address...">
+                        <button>Subscribe</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="delivery-text">We Deliver in: Ahmedabad, Amritsar, Bangalore, Chandigarh, Gurgaon, and across India.
+            <span>© 2018 - 2024 urbanwood.in. All Rights Reserved</span> 
+            </p>
+            <p></p>
+            <div class="certificates">
+                <img src="assets/A+grade-sheesham-big.png" alt="Grade">
+                <img src="assets/free-delivery-big.png" alt="Free Delivery">
+                <img src="assets/36-month-warrenty-big.png" alt="Warranty">
+            </div>
+            
+        </div>
+    </footer>
+    
+    
+
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
